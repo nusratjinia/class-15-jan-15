@@ -1,0 +1,162 @@
+<?php
+error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title><link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>NO</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Continent</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Tokyo</td>
+            <td>japan</td>
+            <td>asia</td>
+        </tr>
+        <tr><td>2</td>
+            <td>mexico city</td>
+            <td>mexico</td>
+            <td>North America</td>
+        </tr>
+        <tr><td>3</td>
+            <td>New york city</td>
+            <td>usa</td>
+            <td>North America</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>mumbai</td>
+            <td>India</td>
+            <td>ASIA</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>seoul</td>
+            <td>korea</td>
+            <td>Asia</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>shanghai</td>
+            <td>china</td>
+            <td>Asia</td>
+
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>lagos</td>
+            <td>nigeria</td>
+            <td>Asia</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>buenos aires</td>
+            <td>argentina</td>
+            <td>Africa</td>
+
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>cairo</td>
+            <td>Egypt</td>
+            <td>South America</td>
+
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>london</td>
+            <td>UK</td>
+            <td>Africa</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<div class="container">
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>City</th>
+            <th>Country</th>
+            <th>Continent</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <?php
+        $place1=array('city'=>'Tokyo',
+            'country'=>'Japan',
+            'continent'=>'Asia'
+        );
+        $place2=array('city'=>'mexico city',
+            'country'=>'mexico',
+            'continent'=>'north america'
+        );
+        $place3=array('city'=>'new york city',
+            'country'=>'usa',
+            'continent'=>'north america'
+        );
+        $place4=array('city'=>'mumbai',
+            'country'=>'india',
+            'continent'=>'asia'
+        );
+        $place5=array('city'=>'seoul',
+            'country'=>'korea',
+            'continent'=>'Asia'
+        );
+        $place6=array('city'=>'shanghai',
+            'country'=>'china',
+            'continent'=>'Asia'
+        );$place7=array('city'=>'lagos',
+            'country'=>'nigeria',
+            'continent'=>'Asia'
+        );$place8=array('city'=>'buenor airos',
+            'country'=>'argentina',
+            'continent'=>'Africa'
+        );$place9=array('city'=>'cairo',
+            'country'=>'eygpt',
+            'continent'=>'south america'
+        );$place10=array('city'=>'london',
+            'country'=>'uk',
+            'continent'=>'Africa');
+
+        $places=array($place1,$place2,$place3,$place4,$place5,$place6,$place7,$place8,$place9,$place10);
+        ?>
+
+        <?php
+        $serial=0;
+        foreach($places as $wish){
+            $serial++;   ?>
+        <tr>
+            <td><?php echo $serial;?></td>
+            <td><?php echo $wish['city']?></td>
+            <td><?php echo $wish['country']?></td>
+            <td><?php echo $wish['continent']?></td>
+        </tr>
+
+       <?php }
+
+        ?>
+        </tbody>
+        </table>
+    </div>
+
+<!--        <script src="//ajax.googleapis.com/ajax/lips/jquery/1.9.1/jquery.min.js"></script>-->
+<!--        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/bootstrap.min.js"></script>-->
+</body>
+</html>
