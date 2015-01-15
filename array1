@@ -1,0 +1,56 @@
+<?php
+error_reporting(E_ALL);
+$place1=array('city'=>'Tokyo',
+              'country'=>'Japan',
+               'continent'=>'Asia'
+               );
+$place2=array('city'=>'mexico city',
+    'country'=>'mexico',
+    'continent'=>'north america'
+);
+$place3=array('city'=>'new york city',
+    'country'=>'usa',
+    'continent'=>'north america'
+);
+$place4=array('city'=>'mumbai',
+    'country'=>'india',
+    'continent'=>'asia'
+);
+$place5=array('city'=>'seoul',
+    'country'=>'korea',
+    'continent'=>'Asia'
+);
+$place6=array('city'=>'shanghai',
+    'country'=>'china',
+    'continent'=>'Asia'
+);$place7=array('city'=>'lagos',
+    'country'=>'nigeria',
+    'continent'=>'Asia'
+);$place8=array('city'=>'buenor airos',
+    'country'=>'argentina',
+    'continent'=>'Africa'
+);$place9=array('city'=>'cairo',
+    'country'=>'eygpt',
+    'continent'=>'south america'
+);$place10=array('city'=>'london',
+    'country'=>'uk',
+    'continent'=>'Africa');
+
+
+$places=array($place1,$place2,$place3,$place4,$place5,$place6,$place7,$place8,$place9,$place10);
+
+print_r($places);
+
+
+echo "<br>";
+echo $places[3];
+echo "<br>";
+
+echo $places[3]['continent'];
+echo "<br>";
+echo $places[3]['country']='bangladesh';
+echo"<br>";
+echo $places[3]['city'];
+echo "<br>";
+echo $places[3]['country'];
+
